@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.17.1",
+    "dom": "^0.0.3",
+    "react-router-dom": "^7.9.2",
+    "router": "^2.2.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5"
+  }
+}

@@ -1,0 +1,103 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.inter-bolditalic {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.bottom-border {
+  border-bottom: black 2px solid;
+}
+
+.App {
+  text-align: center;
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.topnav a {
+  float: left; 
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: gray;
+  color: black;
+  border-radius: 100px;
+}
+
+.topnav a.active {
+  background-color: #af69ee;
+  color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.column-75 {
+  float: left;
+  width: 75%;
+  padding: 20px;
+}
+
+.column-25 {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+.container {
+  padding: 64px;
+}
+
+.xlarge-font {
+  font-size: 400%;
+}
+
+.large-font {
+  font-size: 300%;
+}
+
+.normal-font {
+  font-size: 100%;
+}
+
+.font-24 {
+  font-size: 150%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
