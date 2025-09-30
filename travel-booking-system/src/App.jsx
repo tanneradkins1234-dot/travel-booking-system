@@ -6,7 +6,7 @@ import { Signup } from './Pages/Signup';
 import { TermsService } from './Pages/TermsService';
 import { Flights } from './Pages/Home-Flights';
 import { CarRentals } from './Pages/Home-Car-Rentals';
-import { Layout } from './Components/Layout';
+import { Layout } from './Pages/Components/Layout';
 
 function App() {
   return (

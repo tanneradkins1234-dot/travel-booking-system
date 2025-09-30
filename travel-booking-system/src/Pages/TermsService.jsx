@@ -64,7 +64,7 @@ export function TermsService() {
                (513) 498-8711</p>
         </div>
             <Link to="/Signup">
-                <button>Back to Sign-up</button>
+                <button className='ui button'>Back to Sign-up</button>
             </Link>
         </>
     );

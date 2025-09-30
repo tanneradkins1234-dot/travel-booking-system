@@ -2,17 +2,23 @@ import { Link } from 'react-router-dom';
 
 export function Login() {
     const LoginForm = () => (
-            <div className='ui placeholder segment ui input' id='login' style={{ margin: '100px', marginLeft: '800px', marginRight: '800px' }}>
+            <form className='ui placeholder segment ui form' id='login' style={{ margin: '100px', marginLeft: '600px', marginRight: '600px' }}>
                 <label className='App inter-normal'>LOGIN</label>
                 <br/>
+                <div className='inline field'>
+                <label>Username: </label>                
                 <input type="text" placeholder="Enter Username" name="username" required/>
+                </div>
                 <br/>
+                <div className='inline field'>
+                <label>Password: </label>
                 <input type="password" placeholder="Enter Password" name="password" required/>
+                </div>
                 <br/>
                 <button type="submit" className='ui primary button'>Login</button>
                 <br/>
                 <Link to="/Signup" className='App'>Dont have an account? Click Here</Link>
-            </div>  
+            </form>  
         );
 
     return (
