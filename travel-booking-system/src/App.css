@@ -78,6 +78,7 @@ html {
 
 .container {
   padding: 64px;
+  margin-bottom: 300px;
 }
 
 .xlarge-font {
@@ -114,14 +115,44 @@ html {
   padding: 20px;
 }
 
-.embla {  
+.scroll-indicator {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(https://agiledigital.com.au/wp-content/themes/agile/styles/../img/angle-down.svg);
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.scroll-indicator-container {
+  position: absolute;
+  bottom: 8rem;
+  left: calc(50% - 1rem);
+  animation-name: bgwhitetoblue2;
+  animation-duration: 4.7s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  z-index: 100;
+}
+
+@media (min-width: 800px) {  
+  .scroll-indicator-container {
+    bottom: 4rem;
+  }
+}
+
+.display-none {
+  display: block;
+  height: 0;
+  width: 0;
   overflow: hidden;
+  margin: 0;
+  border: 0;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
-.embla__container {  
-  display: flex;
-}
-
-.embla__slide {  
-  flex: 0 0 100%;  min-width: 0;
+.destination-container {
+  background-color: gray;
 }

@@ -26,7 +26,6 @@ export function Home() {
         </form>
     );
 
-
     return (
         <>
         <div className='container'>
@@ -39,14 +38,21 @@ export function Home() {
                     Always double-check details such as cancellation policies, baggage allowances, and check-in times to avoid surprises later. 
                     It's also wise to read reviews and confirm that the booking provider is trustworthy. Finally, keep all confirmations and receipts  
                     organized, whether digitally or printed, so you can easily access them during your trip. A thoughtful approach not only saves money 
-                    but also ensures a smoother,<span className='inter-bolditalic' style={{ color: 'purple' }}> stress-free travel experience.</span> SCROLL DOWN</p>
+                    but also ensures a smoother,<span className='inter-bolditalic' style={{ color: 'purple' }}> stress-free travel experience.</span></p>
                 </div>
                 <div classname='column-25'>
                     <img src={bike} width="335" height="471" style={{ marginTop: '64px' }} alt="Bike" />
                 </div>
             </div>
         </div>
-        <h1 style={{ marginLeft: '84px' }} className='large-font inter-bold'>Trending Destinations</h1>
+        <div className='scroll-indicator-container'>
+            <a className='scroll-indicator'>
+                <span className='display-none'>Scroll</span>    
+            </a>    
+        </div> 
+        <div className='destination-container'>
+        <h1 style={{ marginLeft: '84px', paddingTop: '64px' }} className='large-font inter-bold'>Trending Destinations</h1>
+        </div>
         </>
     );
 }
