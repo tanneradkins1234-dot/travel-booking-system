@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Container, TextArea } from 'semantic-ui-react';
-import bike  from './bike.WebP'
-import newyork from './NewYork1.WebP'
-import losangeles from './LosAngeles.WebP'
-
+import bike  from './bike.WebP';
+import newyork from './NewYork1.WebP';
+import losangeles from './LosAngeles.WebP';
+import sanfrancisco from './SanFrancisco.WebP';
+import washingtondc from './WashingtonDC.WebP';
+import miami from './Miami.WebP';
+import orlando from './Orlando.WebP';
+import nashville from './Nashville.WebP';
+import lasvegas from './LasVegas.WebP';
+import chicago from './Chicago.WebP';
+import neworleans from './NewOrleans.WebP'
 
 export function Home() {
     const StayForm = () => (
@@ -25,6 +32,27 @@ export function Home() {
             <button type="submit" className="ui primary button">Search</button>
         </form>
     );
+
+    const ImageGrid = () => (
+        <>
+        <div className="row">
+            <div className="column">
+                <img src={chicago} alt='Chicago'/>
+                <img src={newyork} alt='NewYork'/>
+                <img src={miami} alt='Miami'/>
+                <img src={lasvegas} alt='LasVegas'/>
+                <img src={nashville} alt='Nashville'/>
+            </div>
+            <div className="column">
+                <img src={losangeles} alt='LosAngeles'/>
+                <img src={sanfrancisco} alt='SanFrancisco'/>
+                <img src={orlando} alt='Orlando'/>
+                <img src={washingtondc} alt='WashingtonDC'/>
+                <img src={neworleans} alt='NewOrleans'/>
+            </div>
+        </div>
+        </>
+    )
 
     return (
         <>
@@ -52,6 +80,7 @@ export function Home() {
         </div> 
         <div className='destination-container'>
         <h1 style={{ marginLeft: '84px', paddingTop: '64px' }} className='large-font inter-bold'>Trending Destinations</h1>
+        <ImageGrid/>
         </div>
         </>
     );
