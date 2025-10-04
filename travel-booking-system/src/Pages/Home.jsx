@@ -13,50 +13,67 @@ import chicago from './Chicago.WebP';
 import neworleans from './NewOrleans.WebP'
 
 export function Home() {
-    const StayForm = () => (
-        <form className='ui placeholder segment ui input'>
-            <label className="App inter-unique">FIND A PLACE TO STAY:</label>
-            <br/>
-            <label for="destination" className='ui label'>Destination </label>
-            <input type="text" placeholder="Destination" name="destination"/>
-            <br/>
-            <label for="checkin" className='ui label'>Check-in date</label>
-            <input type="date" placeholder="Check-in" name="checkin"/>
-            <br/>
-            <label for="checkout" className='ui label'>Check-out date</label>
-            <input type="date" placeholder="Check-out" name="checkout"/>
-            <br/>
-            <label for="people" className='ui label'>People</label>
-            <input type="number" placeholder="Amount" name="people"/>
-            <br/>
-            <button type="submit" className="ui primary button">Search</button>
-        </form>
-    );
+    const StaySearch = () => (
+        <div className='ui placeholder'>
+            <input type='text' />
+
+        </div>
+    )
 
     const ImageGrid = () => (
-        <>
+        <div className='gradient1'>
         <div className="row">
             <div className="column">
-                <img src={chicago} alt='Chicago'/>
-                <img src={newyork} alt='NewYork'/>
-                <img src={miami} alt='Miami'/>
-                <img src={lasvegas} alt='LasVegas'/>
-                <img src={nashville} alt='Nashville'/>
+                <a href='#' className='container'>
+                    <div className='font-24' >Chicago</div>
+                    <img src={chicago} alt='Chicago'/>
+                </a>
+                <a className='container'>
+                    <img src={newyork} alt='NewYork'/>
+                    <h2 className='bottom-left' >New York</h2>
+                </a>
+                <a className='container'>
+                    <img src={miami} alt='Miami'/>
+                    <h2 className='bottom-left' >Miami</h2>
+                </a>
+                <a className='container'>
+                    <img src={lasvegas} alt='LasVegas'/>
+                    <h2 className='bottom-left'>Las Vegas</h2>
+                </a>
+                <a className='container'>
+                    <img src={nashville} alt='Nashville'/>
+                    <h2 className='bottom-left'>Nashville</h2>
+                </a>
             </div>
             <div className="column">
-                <img src={losangeles} alt='LosAngeles'/>
-                <img src={sanfrancisco} alt='SanFrancisco'/>
-                <img src={orlando} alt='Orlando'/>
-                <img src={washingtondc} alt='WashingtonDC'/>
-                <img src={neworleans} alt='NewOrleans'/>
+                <a className='container'>
+                    <img src={losangeles} alt='LosAngeles'/>
+                    <h2 className='bottom-left'>Los Angeles </h2>
+                </a>
+                <a className='container'>
+                    <img src={sanfrancisco} alt='SanFrancisco'/>
+                    <h2 className='bottom-left'>San Franscisco</h2>
+                </a>
+                <a className='container'>
+                    <img src={orlando} alt='Orlando'/>
+                    <h2 className='bottom-left'>Orlando</h2>
+                </a>
+                <a className='container'>
+                    <img src={washingtondc} alt='WashingtonDC'/>
+                    <h2 className='bottom-left' >Washington DC</h2>
+                </a>
+                <a className='container'>
+                    <img src={neworleans} alt='NewOrleans'/>
+                    <h2 className='bottom-left'>New Orleans</h2>
+                </a>
             </div>
         </div>
-        </>
+        </div>
     )
 
     return (
         <>
-        <div className='container'>
+        <div className='container-1'>
             <div className='row'>
                 <div className='column-75'>
                     <h1 className='xlarge-font inter-bold'>Travel Booking!</h1>
